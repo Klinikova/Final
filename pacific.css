@@ -237,13 +237,43 @@ text-align: left;
 padding-left: 1em; /* remove */
 }
 
+.content main.flexGrid{
+    display: block;
+}
+.twoColumns{
+    display: flex;
+    justify-content: space-between;
+}
+.twoColumns .column{
+    width: 48%;
+    margin-bottom: 1rem;
+}
+.twoColumns .column img{
+    max-width: 100%;
+}
+.twoColumns .column video{
+    padding-left: 0;
+    float: none;
+}
+.blue{
+    color: #39c;
+}
 @media (max-width: 520px) {
 header {
 background-image: none;
 }
 } 
 
+@media(max-width: 600px){
+    .twoColumns{
+        flex-wrap: wrap;
+    }
+    .twoColumns .column{
+        width: 100%
+    }
+}
 @media(min-width: 600px){
+
     nav ul{
         display: flex;
         flex-flow: row nowrap;
