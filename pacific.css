@@ -254,6 +254,7 @@ padding-left: 1em; /* remove */
 .twoColumns .column video{
     padding-left: 0;
     float: none;
+    width: 100%;
 }
 .blue{
     color: #39c;
